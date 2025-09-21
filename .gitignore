@@ -1,0 +1,178 @@
+# =============================================================================
+# EventForce Registration - Professional .gitignore
+# =============================================================================
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.history/
+.kiro/
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Environment Variables (IMPORTANT - Keep credentials safe!)
+.env
+.env.local
+.env.development
+.env.staging
+.env.production
+.env.test
+*.env
+
+# Backend - Laravel/PHP
+backend/vendor/
+backend/.env
+backend/.env.*
+backend/storage/logs/*
+!backend/storage/logs/.gitkeep
+backend/storage/framework/cache/*
+!backend/storage/framework/cache/.gitkeep
+backend/storage/framework/sessions/*
+!backend/storage/framework/sessions/.gitkeep
+backend/storage/framework/testing/*
+!backend/storage/framework/testing/.gitkeep
+backend/storage/framework/views/*
+!backend/storage/framework/views/.gitkeep
+backend/bootstrap/cache/*
+!backend/bootstrap/cache/.gitkeep
+backend/public/storage
+backend/storage/app/public/*
+!backend/storage/app/public/.gitkeep
+
+# PHP
+*.log
+composer.phar
+/vendor/
+.phpunit.result.cache
+phpunit.xml
+
+# Frontend - Node.js/JavaScript
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+frontend/.env
+frontend/.env.*
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Yarn
+.yarn-integrity
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Docker
+.dockerignore
+docker/*/data/
+docker/*/logs/
+
+# Database
+*.sqlite
+*.db
+*.sql.gz
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Build outputs
+dist/
+build/
+out/
+
+# Testing
+coverage/
+.nyc_output/
+.coverage/
+htmlcov/
+
+# Package managers
+package-lock.json
+yarn.lock
+composer.lock
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Archive files (optional - uncomment if needed)
+# *.zip
+# *.tar.gz
+# *.rar
+
+# Application specific
+storage/logs/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/views/
+public/storage
+
+# Development tools
+.phpunit.result.cache
+.php_cs.cache
+.php-cs-fixer.cache
+
+# Cache files
+*.cache
+.cache/
+
+# Miscellaneous
+*.orig
+.sass-cache/
+.tmp/

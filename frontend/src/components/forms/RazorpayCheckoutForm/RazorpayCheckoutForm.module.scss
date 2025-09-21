@@ -1,0 +1,122 @@
+.razorpayContainer {
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+
+    p {
+        margin: 10px 0;
+        color: #666;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    p:first-child {
+        margin-top: 0;
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.paymentInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0 0 20px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    
+    .infoItem {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        
+        .label {
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .value {
+            font-weight: 600;
+            color: #333;
+        }
+    }
+}
+
+.loadingState {
+    margin: 15px 0;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.razorpayLogo {
+    display: inline-block;
+    margin: 10px 0;
+    max-width: 120px;
+    height: auto;
+}
+
+.securityInfo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #e8f5e8;
+    border-radius: 6px;
+    border: 1px solid #c3e6c3;
+    
+    .securityIcon {
+        color: #28a745;
+        font-size: 16px;
+    }
+    
+    .securityText {
+        font-size: 13px;
+        color: #155724;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .razorpayContainer {
+        padding: 15px;
+        margin: 15px 0;
+        
+        p {
+            font-size: 13px;
+        }
+    }
+    
+    .paymentInfo {
+        padding: 12px;
+        
+        .infoItem {
+            font-size: 13px;
+            
+            .label, .value {
+                font-size: 13px;
+            }
+        }
+    }
+    
+    .loadingState {
+        padding: 12px;
+    }
+    
+    .securityInfo {
+        padding: 8px;
+        
+        .securityText {
+            font-size: 12px;
+        }
+    }
+}

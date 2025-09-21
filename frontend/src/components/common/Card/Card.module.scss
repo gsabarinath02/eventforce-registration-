@@ -1,0 +1,21 @@
+.card {
+  box-sizing: border-box;
+  border-radius: var(--hi-radius-lg);
+  padding: var(--hi-spacing-lg);
+  margin-bottom: var(--hi-spacing-lg);
+
+  &.noStyle {
+    //
+  }
+
+  &.lightGray {
+    background-color: var(--hi-color-gray);
+    border: 1px solid var(--hi-color-gray-2);
+  }
+
+  &.default {
+    box-shadow: 0 3px 0 #dddddd;
+    border: 1px solid #e3e3e3;
+    background-color: #FFFFFF;
+  }
+}
