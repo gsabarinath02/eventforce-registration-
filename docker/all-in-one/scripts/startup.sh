@@ -2,6 +2,11 @@
 
 cd /app/backend
 
+# Create required Laravel storage directories
+mkdir -p storage/framework/views
+mkdir -p storage/framework/sessions
+mkdir -p storage/framework/cache
+
 if ! php artisan migrate --force; then
     echo "============================================"
     echo "ERROR: Migrations could not complete. Check the error above."
