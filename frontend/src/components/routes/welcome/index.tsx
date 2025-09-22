@@ -18,9 +18,9 @@ import {useResendEmailConfirmation} from "../../../mutations/useResendEmailConfi
 import {IconClock, IconMailCheck, IconSparkles} from "@tabler/icons-react";
 import {showError, showSuccess} from "../../../utilites/notifications.tsx";
 import {DateTimePicker} from "@mantine/dates";
+import {getConfig} from "../../../utilites/config.ts";
 import dayjs from "dayjs";
 import {EventCategories} from "../../../constants/eventCategories.ts";
-import {getConfig} from "../../../utilites/config.ts";
 
 export const CreateOrganizer = ({progressInfo}: {
     progressInfo?: { currentStep: number, totalSteps: number, progressPercentage: number }
@@ -451,11 +451,11 @@ const Welcome = () => {
             <Container size="sm" className={classes.welcomeContent}>
                 <div className={classes.welcomeHeader}>
                     <div className={classes.logo}>
-                        <img src="/logo-text-only-white-text.png" alt="hi.events"/>
+                        <img src={getConfig("VITE_APP_LOGO_LIGHT", "/eventforce.svg")} alt={t`${getConfig("VITE_APP_NAME", "Eventforce")} logo`}/>
                     </div>
                     <h1 className={classes.welcomeTitle}>
                         <Trans>
-                            Welcome to {getConfig("VITE_APP_NAME", "Hi.Events")}, {userData?.first_name} 👋
+                            Welcome to {getConfig("VITE_APP_NAME", "Eventforce")}, {userData?.first_name} 👋
                         </Trans>
                     </h1>
                 </div>

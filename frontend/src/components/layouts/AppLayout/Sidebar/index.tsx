@@ -76,8 +76,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 <NavLink to={`/manage/events`}>
                     <img
                         style={{maxWidth: '160px', margin: "10px auto"}}
-                        src={getConfig("VITE_APP_LOGO_LIGHT", "/logo-wide-white-text.svg")}
-                        alt={t`${getConfig("VITE_APP_NAME", "Hi.Events")} logo`}
+                        src={getConfig("VITE_APP_LOGO_LIGHT", "/eventforce.svg")}
+                        alt={t`${getConfig("VITE_APP_NAME", "Eventforce")} logo`}
                     />
                 </NavLink>
             </div>

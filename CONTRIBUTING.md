@@ -79,7 +79,7 @@ Please wrap all translatable strings in the `__()` helper function. For example:
 
 ```php
 return [
-    'welcome' => __('Welcome to Hi.Events!'),
+    'welcome' => __('Welcome to Eventforce!'),
 ];
 ```
 
@@ -101,7 +101,7 @@ This will update the translation files in the `backend/lang` directory.
 import { t } from '@lingui/macro';
    
 const MyComponent = () => {
-    return <div>{t`Welcome to Hi.Events!`}</div>;
+    return <div>{t`Welcome to Eventforce!`}</div>;
 };
 ```
 

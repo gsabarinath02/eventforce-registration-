@@ -65,7 +65,7 @@ export const Register = () => {
     return (
         <>
             <header className={classes.header}>
-                <h2>{t`Welcome to ${getConfig("VITE_APP_NAME", "Hi.Events")} 👋`}</h2>
+                <h2>{t`Welcome to ${getConfig("VITE_APP_NAME", "Eventforce")} 👋`}</h2>
                 <p>
                     <Trans>
                         Create an account or <NavLink to={'/auth/login'}>

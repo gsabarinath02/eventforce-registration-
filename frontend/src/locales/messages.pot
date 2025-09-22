@@ -4458,7 +4458,7 @@ msgid "Welcome back{0} 👋"
 msgstr ""
 
 #: src/components/routes/welcome/index.tsx:125
-msgid "Welcome to Hi.Events, {0} 👋"
+msgid "Welcome to Eventforce, {0} 👋"
 msgstr ""
 
 #: src/components/forms/ProductForm/index.tsx:242

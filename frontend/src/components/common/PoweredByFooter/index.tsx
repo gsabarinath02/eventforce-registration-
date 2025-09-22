@@ -2,7 +2,7 @@ import {t} from "@lingui/macro";
 import classes from "./FloatingPoweredBy.module.scss";
 import classNames from "classnames";
 import React from "react";
-import {iHavePurchasedALicence, isHiEvents} from "../../../utilites/helpers.ts";
+import {iHavePurchasedALicence, isEventforce} from "../../../utilites/helpers.ts";
 
 /**
  * (c) Hi.Events Ltd 2025
@@ -22,14 +22,14 @@ export const PoweredByFooter = (props: React.DetailedHTMLProps<React.HTMLAttribu
         return <></>;
     }
 
-    const footerContent = isHiEvents() ? (
+    const footerContent = isEventforce() ? (
         <>
             {t`Planning an event?`} {' '}
             <a href="https://hi.events?utm_source=app-powered-by-footer&utm_content=try-hi-events-free"
                target="_blank"
                className={classes.ctaLink}
-               title={'Effortlessly manage events and sell tickets online with Hi.Events'}>
-                {t`Try Hi.Events Free`}
+               title={'Effortlessly manage events and sell tickets online with Eventforce'}>
+                {t`Try Eventforce Free`}
             </a>
         </>
     ) : (
@@ -37,8 +37,8 @@ export const PoweredByFooter = (props: React.DetailedHTMLProps<React.HTMLAttribu
             {t`Powered by`} {' '}
             <a href="https://hi.events?utm_source=app-powered-by-footer"
                target="_blank"
-               title={'Effortlessly manage events and sell tickets online with Hi.Events'}>
-                Hi.Events
+               title={'Effortlessly manage events and sell tickets online with Eventforce'}>
+                Eventforce
             </a> 🚀
         </>
     );
