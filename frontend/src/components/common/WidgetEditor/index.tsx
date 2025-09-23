@@ -51,26 +51,26 @@ export const WidgetEditor = () => {
     useEffect(() => {
         setHtmlEmbedCode(
             '<div ' +
-            'data-hievents-id="' + eventId + '" ' +
-            'data-hievents-primary-color="' + form.values.primary_color + '" ' +
-            'data-hievents-primary-text-color="' + form.values.primary_text_color + '" ' +
-            'data-hievents-secondary-color="' + form.values.secondary_color + '" ' +
-            'data-hievents-secondary-text-color="' + form.values.secondary_text_color + '" ' +
-            'data-hievents-background-color="' + form.values.background_color + '" ' +
-            'data-hievents-widget-type="widget" ' +
-            'data-hievents-widget-version="1.0" ' +
-            'data-hievents-locale="en" ' +
-            'data-hievents-padding="' + form.values.padding + 'px" ' +
-            'data-hievents-autoresize="' + form.values.autoResize + '" ' +
-            'data-hievents-continue-button-text="' + form.values.continue_button_text + '" ' +
-            'class="hievents-widget">' +
+            'data-eventforce-id="' + eventId + '" ' +
+            'data-eventforce-primary-color="' + form.values.primary_color + '" ' +
+            'data-eventforce-primary-text-color="' + form.values.primary_text_color + '" ' +
+            'data-eventforce-secondary-color="' + form.values.secondary_color + '" ' +
+            'data-eventforce-secondary-text-color="' + form.values.secondary_text_color + '" ' +
+            'data-eventforce-background-color="' + form.values.background_color + '" ' +
+            'data-eventforce-widget-type="widget" ' +
+            'data-eventforce-widget-version="1.0" ' +
+            'data-eventforce-locale="en" ' +
+            'data-eventforce-padding="' + form.values.padding + 'px" ' +
+            'data-eventforce-autoresize="' + form.values.autoResize + '" ' +
+            'data-eventforce-continue-button-text="' + form.values.continue_button_text + '" ' +
+            'class="eventforce-widget">' +
             '</div>'
         );
 
         setReactComponentCode(`
 import React, { useEffect } from 'react';
 
-const HiEventsWidget = ({
+const EventforceWidget = ({
   eventId,
   primaryColor = "${form.values.primary_color}",
   primaryTextColor = "${form.values.primary_text_color}",
@@ -94,32 +94,32 @@ const HiEventsWidget = ({
 
   return (
     <div
-      data-hievents-id={eventId}
-      data-hievents-primary-color={primaryColor}
-      data-hievents-primary-text-color={primaryTextColor}
-      data-hievents-secondary-color={secondaryColor}
-      data-hievents-secondary-text-color={secondaryTextColor}
-      data-hievents-background-color={backgroundColor}
-      data-hievents-widget-type={widgetType}
-      data-hievents-widget-version={widgetVersion}
-      data-hievents-locale={locale}
-      className="hievents-widget"
+      data-eventforce-id={eventId}
+      data-eventforce-primary-color={primaryColor}
+      data-eventforce-primary-text-color={primaryTextColor}
+      data-eventforce-secondary-color={secondaryColor}
+      data-eventforce-secondary-text-color={secondaryTextColor}
+      data-eventforce-background-color={backgroundColor}
+      data-eventforce-widget-type={widgetType}
+      data-eventforce-widget-version={widgetVersion}
+      data-eventforce-locale={locale}
+      className="eventforce-widget"
     />
   );
 };
 
-export default HiEventsWidget;
+export default EventforceWidget;
         `);
 
         setReactUsageCode(`
 import React from 'react';
-import HiEventsWidget from './HiEventsWidget';
+import EventforceWidget from './EventforceWidget';
 
 const App = () => {
   return (
     <div>
       <h1>My Website</h1>
-      <HiEventsWidget 
+      <EventforceWidget 
         eventId="${eventId}"
         primaryColor="${form.values.primary_color}"
         primaryTextColor="${form.values.primary_text_color}"

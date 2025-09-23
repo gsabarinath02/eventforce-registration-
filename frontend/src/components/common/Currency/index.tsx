@@ -15,7 +15,7 @@ interface CurrencyProps {
 
 export const Currency: React.FC<CurrencyProps> = ({
                                                       price,
-                                                      currency = 'USD',
+                                                      currency = 'INR',
                                                       strikeThrough,
                                                       className,
                                                       freeLabel,
@@ -49,7 +49,7 @@ interface ProductPriceProps {
 export const ProductPriceDisplay: React.FC<ProductPriceProps> = ({
                                                                    product,
                                                                    price,
-                                                                   currency = 'USD',
+                                                                   currency = 'INR',
                                                                    className,
                                                                    freeLabel,
                                                                    taxAndServiceFeeDisplayType = 'exclusive',

@@ -179,7 +179,7 @@ export const ProductForm = ({form, product}: ProductFormProps) => {
             .map((item: TaxAndFee) => ({
                 label: item.name + ' - ' + (item.calculation_type === TaxAndFeeCalculationType.Percentage
                     ? item.rate + '%'
-                    : formatCurrency(Number(item.rate), event?.currency || 'USD')),
+                    : formatCurrency(Number(item.rate), event?.currency || 'INR')),
                 value: String(item.id),
             })) || [];
     }

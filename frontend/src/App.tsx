@@ -23,7 +23,7 @@ import {getConfig} from "./utilites/config.ts";
 
 declare global {
     interface Window {
-        hievents: Record<string, string>;
+        eventforce: Record<string, string>;
     }
 }
 

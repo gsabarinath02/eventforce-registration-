@@ -41,7 +41,7 @@ abstract class EventDomainObjectAbstract extends \HiEvents\DomainObjects\Abstrac
     protected ?string $description = null;
     protected ?string $status = null;
     protected array|string|null $location_details = null;
-    protected string $currency = 'USD';
+    protected string $currency = 'INR';
     protected ?string $timezone = null;
     protected array|string|null $attributes = null;
     protected string $created_at;

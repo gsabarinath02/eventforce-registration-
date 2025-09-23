@@ -9,13 +9,13 @@ import {iHavePurchasedALicence, isEventforce} from "../../../utilites/helpers.ts
  *
  * PLEASE NOTE:
  *
- * Hi.Events is licensed under the GNU Affero General Public License (AGPL) version 3.
+ * Eventforce is licensed under the GNU Affero General Public License (AGPL) version 3.
  *
- * You can find the full license text at: https://github.com/HiEventsDev/hi.events/blob/main/LICENCE
+ * You can find the full license text at: https://github.com/EventforceDev/eventforce/blob/main/LICENCE
  *
- * In accordance with Section 7(b) of the AGPL, you must retain the "Powered by Hi.Events" notice.
+ * In accordance with Section 7(b) of the AGPL, you must retain the "Powered by Eventforce" notice.
  *
- * If you wish to remove this notice, a commercial license is available at: https://hi.events/licensing
+ * If you wish to remove this notice, a commercial license is available at: https://eventforce.com/licensing
  */
 export const PoweredByFooter = (props: React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>) => {
     if (iHavePurchasedALicence()) {
@@ -25,7 +25,7 @@ export const PoweredByFooter = (props: React.DetailedHTMLProps<React.HTMLAttribu
     const footerContent = isEventforce() ? (
         <>
             {t`Planning an event?`} {' '}
-            <a href="https://hi.events?utm_source=app-powered-by-footer&utm_content=try-hi-events-free"
+            <a href="https://eventforce.com?utm_source=app-powered-by-footer&utm_content=try-eventforce-free"
                target="_blank"
                className={classes.ctaLink}
                title={'Effortlessly manage events and sell tickets online with Eventforce'}>
@@ -35,7 +35,7 @@ export const PoweredByFooter = (props: React.DetailedHTMLProps<React.HTMLAttribu
     ) : (
         <>
             {t`Powered by`} {' '}
-            <a href="https://hi.events?utm_source=app-powered-by-footer"
+            <a href="https://eventforce.com?utm_source=app-powered-by-footer"
                target="_blank"
                title={'Effortlessly manage events and sell tickets online with Eventforce'}>
                 Eventforce

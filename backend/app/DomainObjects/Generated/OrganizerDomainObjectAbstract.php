@@ -34,7 +34,7 @@ abstract class OrganizerDomainObjectAbstract extends \HiEvents\DomainObjects\Abs
     protected string $created_at;
     protected string $updated_at;
     protected ?string $deleted_at = null;
-    protected string $currency = 'USD';
+    protected string $currency = 'INR';
     protected string $timezone;
     protected string $status = 'DRAFT';
 

@@ -28,7 +28,7 @@ abstract class AccountDomainObjectAbstract extends \HiEvents\DomainObjects\Abstr
 
     protected int $id;
     protected ?int $account_configuration_id = null;
-    protected string $currency_code = 'USD';
+    protected string $currency_code = 'INR';
     protected ?string $timezone = null;
     protected ?string $created_at = null;
     protected ?string $updated_at = null;

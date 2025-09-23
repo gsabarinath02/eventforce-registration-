@@ -25,7 +25,7 @@ abstract class OrderApplicationFeeDomainObjectAbstract extends \HiEvents\DomainO
     protected int $id;
     protected int $order_id;
     protected float $amount;
-    protected string $currency = 'USD';
+    protected string $currency = 'INR';
     protected string $status;
     protected string $payment_method;
     protected array|string|null $metadata = null;

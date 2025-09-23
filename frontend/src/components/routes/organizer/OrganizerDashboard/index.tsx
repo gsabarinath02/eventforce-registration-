@@ -75,7 +75,7 @@ export const OrganizerDashboard = () => {
     const [showCreateEventModal, setShowCreateEventModal] = useState(false);
 
     const [selectedCurrency, setSelectedCurrency] = useState<string>(
-        organizer?.currency || 'USD'
+        organizer?.currency || 'INR'
     );
 
     useEffect(() => {

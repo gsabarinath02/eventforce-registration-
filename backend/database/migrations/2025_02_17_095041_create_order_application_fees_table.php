@@ -14,7 +14,7 @@ return new class extends Migration {
                 ->constrained('orders')
                 ->onDelete('cascade');
             $table->decimal('amount', 10, 2);
-            $table->string('currency', 10)->default('USD');
+            $table->string('currency', 10)->default('INR');
             $table->string('status', 20);
             $table->string('payment_method', 50);
             $table->json('metadata')->nullable();

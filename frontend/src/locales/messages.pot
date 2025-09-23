@@ -1870,15 +1870,15 @@ msgstr ""
 #: src/components/modals/CreateEventModal/index.tsx:131
 #: src/components/modals/DuplicateEventModal/index.tsx:78
 #: src/components/routes/event/Settings/Sections/EventDetailsForm/index.tsx:73
-msgid "Hi.Events Conference {0}"
+msgid "Eventforce Conference {0}"
 msgstr ""
 
 #: src/components/routes/event/Settings/Sections/LocationSettings/index.tsx:117
-msgid "Hi.Events Conference Center"
+msgid "Eventforce Conference Center"
 msgstr ""
 
 #: src/components/layouts/AuthLayout/index.tsx:24
-msgid "hi.events logo"
+msgid "eventforce logo"
 msgstr ""
 
 #: src/components/common/ProductsTable/SortableProduct/index.tsx:77

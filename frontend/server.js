@@ -87,7 +87,7 @@ async function main() {
                 .map((value) => value.toString() || "")
                 .join(" ");
 
-            const envVariablesHtml = `<script>window.hievents = ${getViteEnvironmentVariables()};</script>`;
+            const envVariablesHtml = `<script>window.eventforce = ${getViteEnvironmentVariables()};</script>`;
 
             const headSnippets = [];
             if (process.env.VITE_FATHOM_SITE_ID) {
